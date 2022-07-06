@@ -6,7 +6,7 @@ const FooterCopyright = () => (
     <span role="img" aria-label="Love">
       ♥
     </span>{' '}
-    by <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+    by <a href="https://github.com/FeNatalia">Natalia Fedorova</a>
     {/*
      * PLEASE READ THIS SECTION
      * We'll really appreciate if you could have a link to our website
@@ -16,7 +16,7 @@ const FooterCopyright = () => (
     <style jsx>
       {`
         .footer-copyright :global(a) {
-          @apply text-primary-500;
+          @apply text-orange-500;
         }
 
         .footer-copyright :global(a:hover) {

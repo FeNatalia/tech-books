@@ -3,6 +3,7 @@ import React from 'react';
 import axios from 'axios';
 
 import { VerticalFeatures } from '../templates/VerticalFeatures';
+
 // @ts-ignore
 const New = ({ books }) => {
   return <VerticalFeatures books={books} />;

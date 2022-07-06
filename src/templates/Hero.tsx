@@ -12,7 +12,7 @@ const Hero = () => (
         title={
           <>
             {'The book recommendations for\n'}
-            <span className="text-primary-500">Web developers</span>
+            <span className="text-orange-500">Web developers</span>
           </>
         }
         description="The site we developers need to succeed."
