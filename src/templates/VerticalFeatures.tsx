@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 // @ts-ignore
@@ -11,15 +13,19 @@ const VerticalFeatures = ({ books }) => {
       {books.map((book: any) => {
         return (
           <div key={book.isbn13}>
-            <VerticalFeatureRow
-              title={book.title}
-              price={book.price === '$0.00' ? 'No Price' : book.price}
-              description={
-                book.subtitle === '' ? 'No description' : book.subtitle
-              }
-              image={book.image}
-              imageAlt={'nothing'}
-            />
+            <Link href={`/book?id=${book.isbn13}`}>
+              <a>
+                <VerticalFeatureRow
+                  title={book.title}
+                  price={book.price === '$0.00' ? 'No Price' : book.price}
+                  description={
+                    book.subtitle === '' ? 'No description' : book.subtitle
+                  }
+                  image={book.image}
+                  imageAlt={'nothing'}
+                />
+              </a>
+            </Link>
           </div>
         );
       })}
