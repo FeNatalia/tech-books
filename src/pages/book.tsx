@@ -12,9 +12,9 @@ const Book = ({ book }) => {
         <Image src={book.image} alt={book.title} width={300} height={300} />
         <h2 className="text-3xl text-gray-900 font-semibold">{book.title}</h2>
         <div className="flex m-10 items-center justify-center">
-          <p className="mr-5">
+          <p className="mr-5 text-orange-700">
             <strong>Price: </strong>
-            {book.price === '$0.00' ? 'No Price' : book.price}
+            {book.price === '$0.00' ? 'Free' : book.price}
           </p>
           <p className="mr-5">
             <strong>Year: </strong>
@@ -27,9 +27,17 @@ const Book = ({ book }) => {
         </div>
         <strong>Description: </strong>
         <p className="m-5">{book.desc}</p>
-        <Link href="/new">
+        <Link href={book.url}>
           <a>
-            <Button xl>Go Back</Button>
+            <p className="m-5 text-xl text-orange-500 font-semibold hover:text-orange-700">
+              Link to the Shop
+            </p>
+          </a>
+        </Link>
+
+        <Link href="/">
+          <a>
+            <Button xl>Go To Main</Button>
           </a>
         </Link>
       </main>
