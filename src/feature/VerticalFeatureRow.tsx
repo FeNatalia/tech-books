@@ -12,7 +12,7 @@ type IVerticalFeatureRowProps = {
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-20',
+    'mt-5',
     'flex',
     'flex-wrap',
     'items-center',
@@ -27,7 +27,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     <div className={verticalFeatureClass}>
       <div className="w-full sm:w-1/2 text-center sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
-        <h3 className="text-1xl text-gray-700 font-bold">{props.price}</h3>
+        <h3 className="text-1xl text-orange-600 font-bold">{props.price}</h3>
         <div className="mt-6 text-xl leading-9">{props.description}</div>
       </div>
 

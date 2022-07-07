@@ -17,10 +17,8 @@ const VerticalFeatures = ({ books }) => {
               <a>
                 <VerticalFeatureRow
                   title={book.title}
-                  price={book.price === '$0.00' ? 'No Price' : book.price}
-                  description={
-                    book.subtitle === '' ? 'No description' : book.subtitle
-                  }
+                  price={book.price === '$0.00' ? 'Free' : book.price}
+                  description={book.subtitle}
                   image={book.image}
                   imageAlt={'nothing'}
                 />
